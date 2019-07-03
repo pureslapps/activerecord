@@ -1,0 +1,11 @@
+<h1>welcoe to my website</h1>
+<% if session[:user_id]%>
+<a href="/logout">Log out</a>
+<form class="" action="" method="post">
+
+</form>
+<% else %>
+<a href="/login">Login</a>
+<a href="/signup">signup</a>
+
+<%= session[:user_id] %>
